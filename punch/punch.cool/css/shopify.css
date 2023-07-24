@@ -1,0 +1,1394 @@
+/* font-face {
+    font-family: myfont;
+    src: url(./Rene\ Bieder\ -\ Sagona-BookDEMO.otf);
+}
+body{
+    font-family: myfont;
+} */
+
+.shopify-platform * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+.shopify-platform a {
+    text-decoration: none
+}
+
+.shopify-platform ul {
+    list-style: none
+}
+
+.shopify-platform button {
+    border: none;
+    outline-style: none
+}
+
+.shopify-platform .landing-page-wrapper {
+    min-height: 1000vh
+}
+
+.shopify-platform .landing-page-content {
+    background: #2349b6
+}
+
+.shopify-platform header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: min(374px, 19.5vw);
+    margin-right: min(374px, 19.5vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.shopify-platform header ul {
+    display: flex;
+    justify-content: flex-start
+}
+
+.shopify-platform header ul li a {
+    padding-left: 30px;
+    font-family: Patron;
+    font-style: normal;
+    font-weight: normal;
+    font-size: min(15px, .8vw);
+    color: #ffffff
+}
+
+.shopify-platform ul:last-child {
+    display: none
+}
+
+@media screen and (max-width: 768px) {
+    .shopify-platform header {
+        width: min(calc(100% - 30px), 600px);
+        padding-top: 32px;
+        margin: 0 auto
+    }
+    .shopify-platform header:last-child ul li {
+        display: none
+    }
+    .shopify-platform ul:last-child {
+        display: block;
+        display: flex;
+        justify-content: center
+    }
+    .shopify-platform ul:last-child label {
+        font-family: Patron;
+        font-style: normal;
+        font-weight: normal;
+        margin-right: 6px;
+        font-size: 12px;
+        line-height: 13px;
+        color: #f7f5f2
+    }
+    .shopify-platform ul:last-child img {
+        width: 20px;
+        height: 12px
+    }
+}
+
+.shopify-platform .header-absolute-bg {
+    position: relative
+}
+
+.shopify-platform .header-absolute-bg .header-content {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background: #2349b6;
+    top: -70px
+}
+
+.shopify-platform .hero-section-content {
+    margin-top: -2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 95px
+}
+
+.shopify-platform .hero-section-upper {
+    margin-top: -1px;
+    background: #2349b6;
+    grid-row: 1/2;
+    grid-column: 1/2
+}
+
+.shopify-platform .hero-section-main {
+    padding-top: min(115px, 6vw);
+    margin-left: min(374px, 19.5vw);
+    margin-right: min(76px, 4vw);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7px;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    z-index: 1
+}
+
+.shopify-platform .hero-section-video {
+    max-width: 770px;
+    max-height: 750px;
+    background-color: #f4f5f7;
+    width: 100%
+}
+
+.shopify-platform .hero-section-video img {
+    width: 100%;
+    height: 100%
+}
+
+.shopify-platform .hero-section-text {
+    grid-column: 1/2;
+    grid-row: 1/2
+}
+
+.shopify-platform .hero-section-text h1 {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 300;
+    font-size: min(64px, 3.4vw);
+    color: #ffd300;
+    max-width: 16ch
+}
+
+.shopify-platform .hero-section-text h2 {
+    margin-top: min(14px, .8vw);
+    font-family: Sagona;
+    font-style: italic;
+    font-weight: 100;
+    font-size: min(54px, 2.9vw);
+    line-height: min(75px, 4vw);
+    color: #ffffff;
+    max-width: 20ch
+}
+
+.shopify-platform .hero-section-text p {
+    margin-top: min(22px, 1.2vw);
+    font-family: Patron;
+    font-style: normal;
+    font-weight: 700;
+    max-width: 53ch;
+    font-size: min(18px, 1vw);
+    line-height: min(28px, 1.5vw);
+    letter-spacing: 0.02em;
+    color: #ffffff
+}
+
+.shopify-platform .hero-section-text button {
+    margin-top: min(32px, 1.7vw);
+    width: fit-content;
+    padding: 8px 12px;
+    background: #419b6c;
+    cursor: pointer;
+    margin-bottom: min(130px, 6.8vw);
+    font-family: Patron;
+    font-style: normal;
+    font-weight: normal;
+    font-size: min(24px, 1.3vw);
+    color: #ffffff;
+    border-radius: 3px
+}
+
+.shopify-platform .hero-section-lower {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background: #ffffff
+}
+
+.shopify-platform .hero-section-main .cover-video-wrapper {
+    margin: 20px 0
+}
+
+@media screen and (max-width: 1000px) {
+    .shopify-platform .hero-section-content {
+        grid-template-rows: 1fr 170px
+    }
+    .shopify-platform .hero-section-main {
+        width: min(calc(100% - 30px), 600px);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0px;
+        grid-row: 1/3;
+        grid-column: 1/2;
+        z-index: 1
+    }
+    .shopify-platform .hero-section-text {
+        margin-bottom: 25px
+    }
+    .shopify-platform .hero-section-text h1 {
+        font-size: 30px;
+        line-height: 38px;
+        max-width: none
+    }
+    .shopify-platform .hero-section-text h2 {
+        margin-top: 12px;
+        max-width: none;
+        font-size: 30px;
+        line-height: 38px
+    }
+    .shopify-platform .hero-section-text p {
+        margin-top: 10px;
+        margin-bottom: 17px;
+        font-size: 14px;
+        line-height: 24px
+    }
+    .shopify-platform .hero-section-text button {
+        width: 100%;
+        height: 40px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 17px
+    }
+    .shopify-platform .hero-section-video {
+        margin: auto;
+        background: unset;
+        max-width: 345px;
+        max-height: 213px
+    }
+    .shopify-platform .hero-section-video source {
+        width: 100%
+    }
+}
+
+.shopify-platform .cover-video-content>.thumbnail_wrapper {
+    background-color: white;
+    background-image: url(/assets/images/shopify/hero-section-video1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 250px;
+    box-shadow: -100px 100px 200px rgba(0, 0, 0, 0.15);
+    filter: grayscale(1);
+    transition: 0.3s all
+}
+
+.shopify-platform .cover-video-content>.thumbnail_wrapper:hover {
+    filter: grayscale(0)
+}
+
+@media (min-width: 550px) {
+    .shopify-platform .cover-video-content>.thumbnail_wrapper {
+        height: 350px
+    }
+}
+
+@media (min-width: 769px) {
+    .shopify-platform .cover-video-content>.thumbnail_wrapper {
+        height: min(750px, 39.1vw)
+    }
+}
+
+.shopify-platform .cover-video-content>.thumbnail_wrapper>a {
+    height: 100%;
+    width: 100%;
+    display: block
+}
+
+.shopify-platform .cover-video-content>.thumbnail_wrapper>a:hover {
+    background: transparent
+}
+
+.shopify-platform .cover-video-content>.thumbnail_wrapper .play-tb-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+
+.shopify-platform .cover-video-content>.thumbnail_wrapper .play-tb-wrapper>span {
+    margin-top: 15px;
+    display: inline-block;
+    color: #ffffff
+}
+
+.shopify-platform .competition-section-content {
+    margin-top: min(101px, 5.3vw);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 49px
+}
+
+.shopify-platform .competition-section-main {
+    margin-left: min(336px, 17.5vw);
+    margin-right: min(336px, 17.5vw);
+    grid-column: 1/2;
+    grid-row: 1/3;
+    z-index: 1
+}
+
+.shopify-platform .competition-section-main h2 {
+    display: flex;
+    flex-direction: column;
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 300;
+    font-size: min(80px, 4.2vw);
+    text-align: center;
+    color: #2044a8
+}
+
+.shopify-platform .competition-section-main h4 {
+    margin-top: min(26px, 1.4vw);
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 300;
+    font-size: min(28px, 1.5vw);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000
+}
+
+.shopify-platform .competition-section-main>p {
+    padding-top: min(37px, 2vw);
+    width: min(calc(100% - 30px), 848px);
+    margin: 0 auto;
+    font-family: Patron;
+    font-style: normal;
+    font-weight: 500;
+    font-size: min(16px, .9vw);
+    line-height: min(28px, 1.5vw);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000
+}
+
+.shopify-platform .competition-section-get-in-touch {
+    margin-top: min(96px, 5vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: min(25px, 1.4vw);
+    padding-bottom: min(25px, 1.4vw);
+    background: #ffffff;
+    box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.1)
+}
+
+.shopify-platform .competition-section-get-in-touch>p {
+    margin-left: min(40px, 2.1vw);
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: bold;
+    font-size: min(24px, 1.3vw);
+    color: #000000
+}
+
+.shopify-platform .competition-section-contact-us {
+    display: flex;
+    align-items: center
+}
+
+.shopify-platform .competition-section-contact-us button {
+    margin-right: min(30px, 1.6vw);
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 300;
+    font-size: min(24px, 1.3vw);
+    text-decoration-line: underline;
+    color: #000000
+}
+
+.shopify-platform .competition-section-contact-us a {
+    padding-top: min(13px, .7vw);
+    padding-bottom: min(13px, .7vw);
+    padding-left: min(20px, 1.1vw);
+    padding-right: min(20px, 1.1vw);
+    margin-right: min(30px, 1.6vw);
+    font-family: Patron;
+    font-style: normal;
+    font-weight: normal;
+    font-size: min(24px, 1.3vw);
+    color: #ffffff;
+    background: #419b6c;
+    border-radius: 3px
+}
+
+.shopify-platform .competition-section-lower {
+    background: #f7f5f2;
+    grid-column: 1/2;
+    grid-row: 2/3
+}
+
+@media screen and (max-width: 1200px) {
+    .shopify-platform .competition-section-content {
+        grid-template-rows: 1fr 31px
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .shopify-platform .competition-section-content {
+        margin-top: 65px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr
+    }
+    .shopify-platform .competition-section-main {
+        width: min(calc(100% - 30px), 600px);
+        margin: 0 auto;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        z-index: 1
+    }
+    .shopify-platform .competition-section-main h2 {
+        font-size: 36px;
+        line-height: 41px
+    }
+    .shopify-platform .competition-section-main h4 {
+        padding-top: 15px;
+        width: min(calc(100% - 30px), 600px);
+        margin: 0 auto;
+        font-size: 22px;
+        line-height: 30px
+    }
+    .shopify-platform .competition-section-main>p {
+        padding-top: 10px;
+        width: min(calc(100% - 18px), 600px);
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 28px;
+        padding-bottom: 97px
+    }
+    .shopify-platform .competition-section-get-in-touch {
+        display: none
+    }
+}
+
+.shopify-platform .get-in-touch-section-content {
+    background: #f7f5f2
+}
+
+.shopify-platform .get-in-touch-section-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 94px
+}
+
+.shopify-platform .get-in-touch-section-image {
+    margin-top: min(125px, 6.6vw);
+    margin-bottom: min(138px, 7.2vw)
+}
+
+.shopify-platform .get-in-touch-section-image img {
+    width: 100%
+}
+
+.shopify-platform .get-in-touch-section-text {
+    margin-top: min(217px, 11.6vw);
+    max-width: 73ch
+}
+
+.shopify-platform .get-in-touch-section-text h2 {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 200;
+    font-size: min(46px, 2.4vw);
+    line-height: min(64px, 3.4vw);
+    color: #2044a8
+}
+
+.shopify-platform .get-in-touch-section-text p {
+    margin-top: min(28px, 1.5vw);
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 300;
+    font-size: min(22px, 1.2vw);
+    line-height: min(44px, 2.3vw);
+    letter-spacing: 0.02em;
+    color: #000000
+}
+
+@media screen and (max-width: 768px) {
+    .shopify-platform .get-in-touch-section-main {
+        display: grid;
+        grid-template-columns: 1fr
+    }
+    .shopify-platform .get-in-touch-section-image {
+        margin-top: 44px;
+        margin-bottom: 43px
+    }
+    .shopify-platform .get-in-touch-section-text {
+        width: min(calc(100% - 30px), 600px);
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 67px
+    }
+    .shopify-platform .get-in-touch-section-text h2 {
+        font-size: 36px;
+        line-height: 41px
+    }
+    .shopify-platform .get-in-touch-section-text p {
+        margin-top: 18px;
+        font-size: 18px;
+        line-height: 28px
+    }
+}
+
+.shopify-platform .gaq-cta-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 4
+}
+
+.shopify-platform .gaq-cta-wrapper.expand-full>.gaq-cta-content {
+    transform: translateY(0) !important;
+    max-width: 100% !important
+}
+
+.shopify-platform .gaq-cta-wrapper>.gaq-cta-content {
+    display: flex;
+    background: #fff;
+    padding: 25px 15px;
+    box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(15%);
+    max-width: 1170px;
+    margin: 0 auto;
+    transition: 0.3s all
+}
+
+@media (min-width: 769px) {
+    .shopify-platform .gaq-cta-wrapper>.gaq-cta-content {
+        padding: 25px;
+        margin-top: min(80px, 4.2vw);
+        position: relative;
+        transform: translateY(50%);
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row
+    }
+}
+
+.shopify-platform .gaq-cta-wrapper>.gaq-cta-content>.ptc-text>p {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000
+}
+
+.shopify-platform .gaq-cta-wrapper>.gaq-cta-content>.git-chat-wrapper {
+    margin-top: 15px
+}
+
+@media (min-width: 769px) {
+    .shopify-platform .gaq-cta-wrapper>.gaq-cta-content>.git-chat-wrapper {
+        margin-top: 0
+    }
+}
+
+.shopify-platform .gaq-cta-wrapper>.gaq-cta-content>.git-chat-wrapper>button {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #000000
+}
+
+@media (min-width: 550px) {
+    .shopify-platform .gaq-cta-wrapper>.gaq-cta-content>.git-chat-wrapper>button {
+        display: inline-block;
+        margin-left: 10px;
+        width: auto;
+        padding: 10px 40px
+    }
+}
+
+@media (min-width: 769px) {
+    .shopify-platform .gaq-cta-wrapper>.gaq-cta-content>.git-chat-wrapper>button {
+        margin-left: 30px
+    }
+}
+
+.shopify-platform .gaq-cta-wrapper>.gaq-cta-content>.git-chat-wrapper>a {
+    font-family: Patron;
+    font-style: normal;
+    font-weight: normal;
+    padding: 10px 40px;
+    background: #419b6c;
+    color: #ffffff;
+    border-radius: 3px;
+    display: inline-block
+}
+
+.shopify-platform .gaq-cta-wrapper>.gaq-cta-content>.git-chat-wrapper>a:hover {
+    color: #ffffff
+}
+
+@media (min-width: 769px) {
+    .shopify-platform .gaq-cta-wrapper>.gaq-cta-content>.git-chat-wrapper>a {
+        margin-bottom: 0
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .shopify-platform .gaq-cta-wrapper {
+        display: none
+    }
+}
+
+.shopify-platform .services-section-content {
+    padding-top: min(121px, 6.4vw);
+    width: min(calc(100% - 30px), 1192px);
+    margin: 0 auto
+}
+
+.shopify-platform .services-section-content h2 {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 200;
+    font-size: min(80px, 4.2vw);
+    text-align: center;
+    color: #2349b6
+}
+
+.shopify-platform .services-section-main {
+    margin-top: min(120px, 6.3vw);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: min(80px, 4.2vw)
+}
+
+.shopify-platform .service-section-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.shopify-platform .service-section-data-image {
+    width: min(128px, 6.7vw);
+    height: min(128px, 6.7vw)
+}
+
+.shopify-platform .service-section-data-image img {
+    width: 100%
+}
+
+.shopify-platform .service-section-data h4 {
+    margin-top: min(51px, 2.7vw);
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 600;
+    font-size: min(24px, 1.3vw);
+    text-align: center;
+    color: #000000
+}
+
+.shopify-platform .service-section-data p {
+    margin-top: min(19px, 1vw);
+    font-family: Patron;
+    font-style: normal;
+    font-weight: 100;
+    font-size: min(20px, 1.1vw);
+    line-height: min(30px, 1.6vw);
+    max-width: 34ch;
+    text-align: center
+}
+
+@media screen and (max-width: 1000px) {
+    .shopify-platform .services-section-content {
+        padding-top: min(121px, 6.4vw);
+        width: min(calc(100% - 30px), 500px);
+        margin: 0 auto
+    }
+    .shopify-platform .services-section-main {
+        margin-top: min(120px, 6.3vw);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: min(80px, 4.2vw)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shopify-platform .services-section-content {
+        padding-top: 44px;
+        width: min(calc(100% - 30px), 600px);
+        margin: 0 auto
+    }
+    .shopify-platform .services-section-main {
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px
+    }
+    .shopify-platform .services-section-content h2 {
+        font-size: 36px;
+        line-height: 41px;
+        text-align: center
+    }
+    .shopify-platform .service-section-data-image {
+        width: 128px;
+        height: 128px
+    }
+    .shopify-platform .service-section-data h4 {
+        margin-top: 37px;
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center
+    }
+    .shopify-platform .service-section-data p {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 36ch;
+        text-align: center
+    }
+}
+
+.shopify-platform .projects-section-content {
+    margin-top: min(175px, 9.2vw);
+    margin-bottom: min(58px, 3.1vw)
+}
+
+.shopify-platform .projects-section-content h2 {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 200;
+    font-size: min(80px, 4.2vw);
+    text-align: center;
+    color: #2349b6
+}
+
+.shopify-platform .projects-section-content p {
+    padding-top: min(25px, 1.4vw);
+    max-width: 53ch;
+    margin: 0 auto;
+    font-family: Patron;
+    font-style: normal;
+    font-weight: 500;
+    font-size: min(18px, 1vw);
+    text-align: center;
+    color: #5c5e63
+}
+
+.shopify-platform .projects-section-main-l {
+    display: grid;
+    grid-template-columns: 0.85fr 0.15fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    column-gap: min(55px, 2.9vw)
+}
+
+.shopify-platform .projects-section-bg-l {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background: #f4f4f4;
+    z-index: -1
+}
+
+.shopify-platform .projects-section-image-l {
+    display: flex;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 2/3
+}
+
+.shopify-platform .projects-section-image-l img {
+    width: 100%
+}
+
+.shopify-platform .projects-section-text-r {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    margin-right: auto;
+    max-width: 62ch;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column
+}
+
+.shopify-platform .projects-section-text-r h2 {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 200;
+    font-size: min(46px, 2.4vw);
+    line-height: min(64px, 3.4vw);
+    color: #2044a8
+}
+
+.shopify-platform .projects-section-text-r h4 {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(28px, 2.4vw);
+    line-height: min(35px, 3.4vw);
+    letter-spacing: 0.02em;
+    color: #000000
+}
+
+.shopify-platform .projects-section-text-r p {
+    margin-top: min(27px, 1.5vw);
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 300;
+    font-size: min(22px, 1.2vw);
+    line-height: min(44px, 2.3vw);
+    letter-spacing: 0.02em;
+    color: #000000
+}
+
+.shopify-platform .projects-section-main-r {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 0.8fr;
+    grid-template-rows: 60px auto 60px
+}
+
+.shopify-platform .projects-section-main-r1 {
+    display: grid;
+    grid-template-columns: 1fr 0.21fr 0.73fr;
+    grid-template-rows: 120px auto 100px
+}
+
+.shopify-platform .projects-section-bg-r {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    background: #f4f4f4;
+    z-index: -1
+}
+
+.shopify-platform .projects-section-image-r {
+    display: flex;
+    align-items: flex-end;
+    grid-column: 2/4;
+    grid-row: 2/3
+}
+
+.shopify-platform .projects-section-image-r img {
+    width: 100%
+}
+
+.shopify-platform .projects-section-text-l {
+    padding-left: 40px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: auto;
+    max-width: 82ch;
+    display: flex;
+    flex-direction: column
+}
+
+.shopify-platform .projects-section-text-l h2 {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 300;
+    font-size: min(46px, 2.4vw);
+    line-height: min(64px, 3.4vw);
+    color: #2044a8
+}
+
+.shopify-platform .projects-section-text-l h4 {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(28px, 2.4vw);
+    line-height: min(35px, 3.4vw);
+    letter-spacing: 0.02em;
+    color: #000000
+}
+
+.shopify-platform .projects-section-text-l p {
+    margin-top: min(27px, 1.5vw);
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 300;
+    font-size: min(22px, 1.2vw);
+    line-height: min(44px, 2.3vw);
+    letter-spacing: 0.02em;
+    color: #000000
+}
+
+.shopify-platform .projects-section-text-btn {
+    margin-top: min(50px, 2.7vw);
+    display: flex;
+    align-items: center
+}
+
+.shopify-platform .projects-section-text-btn a {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    font-size: min(16px, .9vw);
+    color: #252525;
+    transition: 0.3s all
+}
+
+.shopify-platform .projects-section-text-btn a:hover {
+    background-color: white
+}
+
+.shopify-platform .projects-section-text-btn:hover svg {
+    transform: translateX(10px);
+    transition: 0.3s all
+}
+
+.shopify-platform .projects-section-text-btn:hover svg * {
+    fill: green
+}
+
+.shopify-platform .projects-section-text-btn svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px
+}
+
+@media screen and (max-width: 900px) {
+    .shopify-platform .projects-section-content {
+        padding-top: 48px;
+        padding-bottom: 20px;
+        width: min(calc(100% - 30px), 600px);
+        margin: 0 auto
+    }
+    .shopify-platform .projects-section-content h2 {
+        font-size: 36px;
+        line-height: 41px
+    }
+    .shopify-platform .projects-section-content p {
+        padding-top: 7px;
+        font-size: 14px;
+        line-height: 24px
+    }
+    .shopify-platform .projects-section-main-l {
+        display: grid;
+        grid-template-columns: 1fr 0.16fr;
+        grid-template-rows: 30px auto 30px auto;
+        column-gap: 50px
+    }
+    .shopify-platform .projects-section-bg-l {
+        grid-column: 1/2;
+        grid-row: 1/4
+    }
+    .shopify-platform .projects-section-image-l {
+        grid-column: 1/3;
+        grid-row: 2/3
+    }
+    .shopify-platform .projects-section-text-r {
+        padding-top: 23px;
+        grid-row: 4/5;
+        grid-column: 1/3;
+        width: min(calc(100% - 30px), 600px);
+        margin: 0 auto;
+        max-width: 68ch;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column
+    }
+    .shopify-platform .projects-section-text-r h2 {
+        font-size: 36px;
+        line-height: 54px
+    }
+    .shopify-platform .projects-section-text-r p {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 34px
+    }
+    .shopify-platform .projects-section-text-r :nth-child(3) {
+        padding-top: 30px
+    }
+    .shopify-platform .projects-section-main-r {
+        grid-template-columns: 0.16fr 1fr;
+        grid-template-rows: 30px auto 30px auto;
+        column-gap: 50px
+    }
+    .shopify-platform .projects-section-main-r1 {
+        grid-template-columns: 0.16fr 1fr;
+        grid-template-rows: 30px auto 10px auto;
+        column-gap: 40px
+    }
+    .shopify-platform .projects-section-bg-r {
+        grid-column: 2/3;
+        grid-row: 1/4
+    }
+    .shopify-platform .projects-section-image-r {
+        grid-column: 1/3;
+        grid-row: 2/3
+    }
+    .shopify-platform .projects-section-text-l {
+        grid-row: 4/5;
+        grid-column: 1/3;
+        width: min(calc(100% - 30px), 600px);
+        margin: 0 auto;
+        padding: 55px 0 2px 0
+    }
+    .shopify-platform .projects-section-text-l h2 {
+        font-size: 36px;
+        line-height: 54px
+    }
+    .shopify-platform .projects-section-text-l p {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 34px
+    }
+    .shopify-platform .projects-section-text-l :nth-child(3) {
+        padding-top: 30px
+    }
+    .shopify-platform .projects-section-text-btn {
+        margin-top: 23px;
+        margin-bottom: 32px
+    }
+    .shopify-platform .projects-section-text-btn a {
+        font-size: 16px
+    }
+}
+
+.shopify-platform #bynp-wrapper {
+    margin-top: min(170px, 8.9vw);
+    background: #f7f5f2
+}
+
+.shopify-platform .bynp-content {
+    padding-top: 150px;
+    padding-bottom: 122px;
+    width: min(calc(100% - 70px), 1178px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.shopify-platform .bynp-text {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-top: min(108px, 5.8vw)
+}
+
+.shopify-platform #bynp-wrapper>.bynp-content>.bynp-text>h2 {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 100;
+    font-size: min(80px, 4.2vw);
+    line-height: min(91px, 4.8vw);
+    color: #2044a8;
+    max-width: 8ch
+}
+
+.shopify-platform #bynp-wrapper>.bynp-content>.bynp-text p {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 200;
+    font-size: min(40px, 2.1vw);
+    line-height: min(65px, 3.4vw);
+    color: #000000
+}
+
+.shopify-platform .bynp-age-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px
+}
+
+.shopify-platform .bynp-content .bynp-age-content>.pa-ind-content {
+    padding: 35px 0 35px 23px;
+    height: 100%
+}
+
+.shopify-platform .bynp-content .bynp-age-content>:nth-child(1) {
+    box-shadow: -100px 100px 200px rgba(0, 0, 0, 0.15);
+    border-right: 1px solid #ececec
+}
+
+.shopify-platform .bynp-content .bynp-age-content>:nth-child(2) {
+    border-right: 1px solid #ececec;
+    padding-right: 20px
+}
+
+.shopify-platform .bynp-content .bynp-age-content>:nth-child(4) {
+    box-shadow: -100px 100px 200px rgba(0, 0, 0, 0.15);
+    border-right: 1px solid #ececec;
+    grid-column: 2/3
+}
+
+.shopify-platform .bynp-content .bynp-age-content>:nth-child(5) {
+    grid-column: 3/4
+}
+
+.shopify-platform #bynp-wrapper .bynp-content .bynp-age-content .pa-ind-content h4 {
+    font-family: Sagona;
+    font-style: normal;
+    font-weight: 200;
+    color: #000000;
+    font-size: min(45px, 2.4vw);
+    line-height: min(45px, 2.4vw);
+    margin-bottom: 20px
+}
+
+.shopify-platform #bynp-wrapper .bynp-content .bynp-age-content .pa-ind-content p {
+    font-family: Patron;
+    font-style: normal;
+    font-weight: 500;
+    font-size: min(14px, .8vw);
+    line-height: min(24px, 1.3vw);
+    color: #5c5d63
+}
+
+@media screen and (max-width: 768px) {
+    .shopify-platform #bynp-wrapper {
+        margin-top: 7px
+    }
+    .shopify-platform #bynp-wrapper>.bynp-content>.bynp-text>h2 {
+        font-size: 54px;
+        line-height: 62px
+    }
+    .shopify-platform #bynp-wrapper>.bynp-content>.bynp-text p {
+        padding-top: 31px;
+        padding-bottom: 15px;
+        font-size: 24px;
+        line-height: 35px
+    }
+    .shopify-platform .bynp-text {
+        margin-top: 0
+    }
+    .shopify-platform .bynp-content {
+        padding-top: 51px;
+        padding-bottom: 52px;
+        width: min(calc(100% - 34px), 600px);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr
+    }
+    .shopify-platform .bynp-age-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 0
+    }
+    .shopify-platform .bynp-content .bynp-age-content>.pa-ind-content {
+        padding: 43px 0 0 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+    .shopify-platform .bynp-content .bynp-age-content>:nth-child(1) {
+        box-shadow: -100px 100px 200px rgba(0, 0, 0, 0.15);
+        border-right: none;
+        grid-column: 1/2;
+        grid-row: 1/2
+    }
+    .shopify-platform .bynp-content .bynp-age-content>:nth-child(2) {
+        border-right: none;
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+    .shopify-platform .bynp-content .bynp-age-content>:nth-child(3) {
+        border-top: 1px solid #ececec;
+        grid-column: 1/2;
+        grid-row: 3/4
+    }
+    .shopify-platform .bynp-content .bynp-age-content>:nth-child(4) {
+        border-top: 1px solid #ececec;
+        border-right: none;
+        grid-column: 1/2;
+        grid-row: 4/5
+    }
+    .shopify-platform .bynp-content .bynp-age-content>:nth-child(5) {
+        box-shadow: none;
+        grid-column: 1/2;
+        grid-row: 5/6
+    }
+    .shopify-platform #bynp-wrapper .bynp-content .bynp-age-content .pa-ind-content h4 {
+        font-size: 48px;
+        line-height: 55px;
+        margin-bottom: 20px;
+        text-align: center
+    }
+    .shopify-platform #bynp-wrapper .bynp-content .bynp-age-content .pa-ind-content p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        max-width: 29ch;
+        margin: 0 auto
+    }
+}
+
+.shopify-platform .owl-stage-outer {
+    padding-top: 98px
+}
+
+.shopify-platform .owl-stage {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column
+}
+
+.shopify-platform .owl-theme .owl-dots .owl-dot.active span,
+.shopify-platform .owl-theme .owl-dots .owl-dot:hover span {
+    background: #2349b6
+}
+
+.shopify-platform .slider-wrapper {
+    margin-left: min(339px, 17.8vw);
+    margin-right: min(339px, 17.8vw);
+    padding-top: min(112px, 5.4vw)
+}
+
+.shopify-platform .slider-content {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-rows: 1fr 0.16fr;
+    background: #f3fbf9;
+    height: 100%
+}
+
+.shopify-platform .slider-content::before {
+    background-image: url("/assets/images/shopify/slider-top-img.svg");
+    position: absolute;
+    content: "";
+    height: min(123px, 6.5vw);
+    width: min(168px, 8.8vw);
+    transform: translate(-1%, -61%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.shopify-platform .slider-title {
+    padding-left: min(60px, 3.3vw);
+    display: flex;
+    flex-direction: column;
+    padding-top: min(101px, 5.3vw);
+    font-family: Sagona;
+    font-style: italic;
+    font-weight: normal;
+    color: #000000
+}
+
+.shopify-platform .slider-title-1 p {
+    font-size: min(36px, 1.9vw);
+    font-weight: 300;
+    max-width: 27ch;
+    line-height: min(65px, 3.4vw)
+}
+
+.shopify-platform .slider-title-1 p span {
+    font-family: patron;
+    font-style: normal;
+    font-weight: 600
+}
+
+.shopify-platform .slider-title-2 p {
+    font-size: min(50px, 2.7vw);
+    font-weight: 100;
+    max-width: 13ch;
+    line-height: min(65px, 3.4vw)
+}
+
+.shopify-platform .slider-title-2 p span {
+    font-weight: 500
+}
+
+.shopify-platform .slider-title-3 p {
+    font-size: min(28px, 1.5vw);
+    font-weight: 300;
+    max-width: 33ch;
+    line-height: 2
+}
+
+.shopify-platform .slider-title-3 p span {
+    font-weight: 600
+}
+
+.shopify-platform .slider-title-4 p {
+    font-size: min(35px, 1.9vw);
+    font-weight: 300;
+    max-width: 26ch;
+    line-height: 2
+}
+
+.shopify-platform .slider-title-4 p span {
+    font-weight: 500
+}
+
+.shopify-platform .slider-pera {
+    margin-bottom: min(51px, 2.8vw);
+    padding-left: min(60px, 3.3vw)
+}
+
+.shopify-platform .slider-pera p {
+    font-family: Patron;
+    font-style: normal;
+    font-weight: 300;
+    font-size: min(18px, 1vw);
+    line-height: min(32px, 1.7vw);
+    color: #2349b6
+}
+
+.shopify-platform .slider-pera p span {
+    display: flex;
+    flex-direction: column
+}
+
+.shopify-platform .slider-img {
+    grid-row: 1/3;
+    grid-column: 2/3
+}
+
+.shopify-platform .slider-img img {
+    width: 100%;
+    height: 100%
+}
+
+@media screen and (max-width: 768px) {
+    .shopify-platform .owl-stage-outer {
+        padding-top: 42px
+    }
+    .shopify-platform .slider-wrapper {
+        padding-top: 42px;
+        width: min(calc(100% - 50px), 600px);
+        margin: 0 auto
+    }
+    .shopify-platform .slider-content {
+        display: grid;
+        grid-template-columns: 0.45fr 1fr;
+        grid-template-rows: 1fr 0.16fr;
+        row-gap: 20px
+    }
+    .shopify-platform .slider-content::before {
+        width: 70px;
+        height: 52px;
+        transform: translate(1%, -60%)
+    }
+    .shopify-platform .slider-title {
+        padding-top: 55px;
+        padding-left: 24px;
+        grid-column: 1/3;
+        grid-row: 1/2
+    }
+    .shopify-platform .slider-title p {
+        max-width: 29ch;
+        font-size: 18px;
+        line-height: 30px
+    }
+    .shopify-platform .slider-img {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        padding-left: 21px;
+        width: 92px;
+        height: 72px;
+        box-shadow: -100px 100px 200px rgba(0, 0, 0, 0.15)
+    }
+    .shopify-platform .slider-img img {
+        border-radius: 50px
+    }
+    .shopify-platform .slider-pera {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        margin-bottom: 36px
+    }
+    .shopify-platform .slider-pera p {
+        margin-top: min(55px, 2.9vw);
+        margin-bottom: min(51px, 2.7vw);
+        font-size: 12px;
+        line-height: 25px
+    }
+}

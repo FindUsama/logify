@@ -1,0 +1,670 @@
+
+
+.color-primary {
+    color: #ffba00
+}
+
+.color-secondary {
+    color: #2349b6
+}
+
+/* @font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Thin.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-thin-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-thin-italic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-ExtraLight.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extralight-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extralight-italic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Light.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-light-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-light-italic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-book.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-book-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-book-italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Medium.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-medium-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-medium-italic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-SemiBold.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-semibold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-semibold-italic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-bold.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-bold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-bold-italic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extrabold.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extrabold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extrabold-italic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-heavy.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-heavy-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-heavy-italic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Thin.woff2") format("woff2"), url("../assets/typefaces/patron/PatronWEB-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-ThinItalic.woff2") format("woff2"), url("../assets/typefaces/patron/PatronWEB-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Light.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-LightItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Regular.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Italic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Medium.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-MediumItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Bold.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-BoldItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Black.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-BlackItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic
+} */
+
+.content-section {
+    position: relative;
+    padding: 130px 0;
+    text-align: center
+}
+
+@media screen and (max-width: 960px) {
+    .content-section {
+        padding: 60px 0
+    }
+}
+
+.content-section .container {
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: auto
+}
+
+@media screen and (min-width: 1680px) {
+    .hidden-xlg {
+        display: none !important
+    }
+}
+
+.visible-lg {
+    display: none !important
+}
+
+@media screen and (min-width: 1400px) {
+    .visible-lg {
+        display: block !important
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hidden-lg {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hidden-md {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .hidden-sm {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hidden-xs {
+        display: none !important
+    }
+}
+
+.header {
+    height: 70px
+}
+
+.content>.hero {
+    max-width: 1280px;
+    margin: 0 5%;
+    padding: 180px 0 60px;
+    margin-bottom: 30px
+}
+
+@media screen and (min-width: 1280px) {
+    .content>.hero {
+        max-width: 1280px;
+        margin: 0 auto
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .content>.hero {
+        width: auto;
+        margin: 0 5%
+    }
+}
+
+.content>.hero>.heading>.title {
+    font-family: Sagona;
+    font-weight: 100;
+    color: #2a2a2a;
+    font-size: 64px;
+    line-height: 72px
+}
+
+.content>.hero>.heading>.title>em {
+    font-weight: inherit;
+    font-style: inherit;
+    background: #ffd300
+}
+
+@media screen and (max-width: 640px) {
+    .content>.hero>.heading>.title {
+        font-size: 36px;
+        line-height: 44px
+    }
+}
+
+.content>.hero>.heading>.subtitle {
+    font-family: Sagona;
+    font-weight: 100;
+    color: #2a2a2a;
+    font-size: 64px;
+    line-height: 72px;
+    font-style: italic
+}
+
+.content>.hero>.heading>.subtitle>em {
+    font-weight: inherit;
+    font-style: inherit;
+    background: #90c5be
+}
+
+@media screen and (max-width: 640px) {
+    .content>.hero>.heading>.subtitle {
+        font-size: 36px;
+        line-height: 44px
+    }
+}
+
+.content>.hero>.heading>.description {
+    width: 60%;
+    color: #2a2a2a;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 45px;
+    text-transform: uppercase
+}
+
+.content>.hero>.heading>.description>em {
+    font-weight: inherit;
+    font-style: inherit;
+    background: #ffd300
+}
+
+@media screen and (max-width: 640px) {
+    .content>.hero>.heading>.description {
+        font-size: 14px;
+        line-height: 34px;
+        width: auto
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .content>.hero {
+        padding: 0 0 20px
+    }
+    .content>.hero>.graphic {
+        margin-top: 40px;
+        height: 60px
+    }
+}
+
+.case-studies .section {
+    max-width: 1280px;
+    margin: 0 5%
+}
+
+@media screen and (min-width: 1280px) {
+    .case-studies .section {
+        max-width: 1280px;
+        margin: 0 auto
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .case-studies .section {
+        width: auto;
+        margin: 0 5%
+    }
+}
+
+.case-studies .section+.section {
+    margin-top: 5%
+}
+
+.case-studies .section>.visual {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: #f7f5f2
+}
+
+.case-studies .section>.visual>.graphic {
+    overflow: hidden
+}
+
+.case-studies .section>.visual>.graphic>img {
+    display: block;
+    width: 100%;
+    max-width: 100%
+}
+
+.case-studies .section>.visual>.graphic.fallback {
+    background-position: -9999em -9999em;
+    background-repeat: no-repeat
+}
+
+.case-studies .section>.explanation {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    width: 50%;
+    background: #eae8e5
+}
+
+.case-studies .section>.explanation>.heading>.title {
+    font-family: Sagona;
+    font-weight: 100;
+    color: #2a2a2a;
+    font-size: 64px;
+    line-height: 72px;
+    font-size: 52px;
+    line-height: 56px
+}
+
+.case-studies .section>.explanation>.heading>.title>em {
+    font-weight: inherit;
+    font-style: inherit;
+    background: #ffd300
+}
+
+@media screen and (max-width: 640px) {
+    .case-studies .section>.explanation>.heading>.title {
+        font-size: 36px;
+        line-height: 44px
+    }
+}
+
+.case-studies .section>.explanation>.heading>.subtitle {
+    font-family: Sagona;
+    font-weight: 100;
+    color: #2a2a2a;
+    font-size: 64px;
+    line-height: 72px;
+    font-size: 52px;
+    line-height: 56px;
+    color: #419b6c;
+    font-style: italic
+}
+
+.case-studies .section>.explanation>.heading>.subtitle>em {
+    font-weight: inherit;
+    font-style: inherit;
+    background: #ffd300
+}
+
+@media screen and (max-width: 640px) {
+    .case-studies .section>.explanation>.heading>.subtitle {
+        font-size: 36px;
+        line-height: 44px
+    }
+}
+
+.case-studies .section>.explanation>.heading>.description {
+    color: #2a2a2a;
+    margin: 20px 0
+}
+
+.case-studies .section>.explanation>.heading>ol {
+    text-align: left;
+    border-top: 0;
+    counter-reset: numbering;
+    margin: 20px 0;
+    padding: 0
+}
+
+.case-studies .section>.explanation>.heading>ol>li {
+    position: relative;
+    border-bottom: 1px solid #e2e0dc;
+    padding: 10px 0;
+    list-style: none;
+    padding-left: 50px
+}
+
+.case-studies .section>.explanation>.heading>ol>li:before {
+    font-family: Sagona;
+    font-weight: 500;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    display: block;
+    color: #419b6c;
+    content: counter(numbering);
+    counter-increment: numbering
+}
+
+.case-studies .section>.explanation>.heading>ol>li:last-of-type {
+    border-bottom: 0
+}
+
+.case-studies .section>.explanation>.heading>.button-group>a {
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    color: #fff;
+    background: #419b6c;
+    position: relative;
+    padding: 15px 30px 17px
+}
+
+.case-studies .section>.explanation>.heading>.button-group>a:hover {
+    opacity: 1;
+    background-color: #2349b6
+}
+
+.case-studies .section>.explanation>.heading>.button-group>a:active {
+    opacity: 1;
+    background-color: #ffd300
+}
+
+.case-studies .section>.explanation>.heading>.button-group>a.download {
+    padding-left: 50px
+}
+
+.case-studies .section>.explanation>.heading>.button-group>a.download:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 12px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    background-image: url("/assets/images/shared/download_for_button.png");
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.case-studies .section.side-by-side {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    margin-bottom: 8%
+}
+
+.case-studies .section.exploded>.visual {
+    background: transparent;
+    position: relative
+}
+
+.case-studies .section.exploded>.visual:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    z-index: -1;
+    background: #f7f5f2
+}
+
+.case-studies .section.exploded>.explanation {
+    background: transparent;
+    position: relative;
+    padding: 10%
+}
+
+.case-studies .section.exploded>.explanation:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    z-index: -1;
+    background: #eae8e5
+}
+
+@media screen and (max-width: 1280px) {
+    .case-studies .section>.visual>.graphic.fallback {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover
+    }
+    .case-studies .section>.visual>.graphic.fallback>img {
+        display: none
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .case-studies .section.side-by-side {
+        display: block
+    }
+    .case-studies .section>.visual {
+        width: 100%
+    }
+    .case-studies .section>.visual>.graphic.fallback {
+        position: static;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        background-image: none !important
+    }
+    .case-studies .section>.visual>.graphic.fallback>img {
+        display: block
+    }
+    .case-studies .section>.explanation {
+        width: 100%
+    }
+}
+
+a {
+    color: #2349b6
+}
+
+p a,
+li a {
+    color: #2349b6;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px
+}
+
+p a:hover,
+li a:hover {
+    opacity: 1;
+    color: #2349b6;
+    border-bottom: 1px solid #2349b6
+}

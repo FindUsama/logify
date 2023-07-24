@@ -1,0 +1,230 @@
+/* font-face {
+    font-family: myfont;
+    src: url(./Rene\ Bieder\ -\ Sagona-BookDEMO.otf);
+}
+body{
+    font-family: myfont;
+} */
+
+.jobs-section {
+    position: relative;
+    overflow: hidden;
+    padding: 0 5% 60px
+}
+
+.jobs-section .container {
+    max-width: 1280px;
+    margin: auto
+}
+
+.job-description {
+    max-width: 1045px;
+    margin: 0 auto;
+    padding: 33px 36px 83px 80px;
+    margin-bottom: 212px;
+    background-color: #f9f9f9
+}
+
+@media screen and (min-width: 1000px) {
+    .job-description {
+        box-shadow: 30px 80px 10px 0 rgba(0, 0, 0, 0.14)
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .job-description {
+        margin-bottom: 50px
+    }
+}
+
+.job-description h3 {
+    color: #244ab6;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    margin: 40px 0 20px 0;
+    text-transform: uppercase
+}
+
+.job-description .link-doc {
+    text-align: right;
+    margin-bottom: 65px
+}
+
+.job-description .link-doc a {
+    color: #419b6c;
+    font-size: 15px;
+    font-weight: bold
+}
+
+.job-description .job-title {
+    font-weight: 900;
+    color: #000;
+    font-size: 36px;
+    margin-bottom: 20px
+}
+
+.job-description .subtitle {
+    color: #000;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 30px
+}
+
+.job-description .columns {
+    display: flex
+}
+
+.job-description .columns .column {
+    width: 33%
+}
+
+.job-description .columns .column:first-child {
+    width: 66%;
+    padding-right: 106px
+}
+
+.job-description .columns .column p {
+    color: #000000
+}
+
+@media all and (max-width: 767px) {
+    .job-description .columns {
+        display: block
+    }
+    .job-description .columns .column {
+        width: 100%
+    }
+    .job-description .columns .column:first-child {
+        width: 100%;
+        padding-right: 0
+    }
+}
+
+.job-description .job-requirments-list {
+    color: #244ab6;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin: 6px 0 40px 0
+}
+
+.job-description .job-requirments-list li {
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 18px;
+    color: #000;
+    margin-top: 12px;
+    margin-left: 25px;
+    padding-left: 10px;
+    position: relative;
+    font-weight: normal
+}
+
+.job-description .job-requirments-list li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #419b6c;
+    position: absolute;
+    left: -14px;
+    top: 10px;
+    border-radius: 50%
+}
+
+.job-description .job-requirments-list .title {
+    font-weight: 600
+}
+
+.job-description .job-requirments-list .text {
+    color: #000;
+    letter-spacing: normal;
+    text-transform: none;
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 26px
+}
+
+.job-description .system-info {
+    margin-top: 130px
+}
+
+.job-description .system-info p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #d5d5d5;
+    margin-top: 12px
+}
+
+.job-description .system-info p:first-child {
+    color: #bbbbbb
+}
+
+.job-description .system-info p a {
+    color: #419b6c
+}
+
+@media all and (max-width: 767px) {
+    .job-description {
+        padding: 30px
+    }
+}
+
+.more-templates {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 0 80px
+}
+
+.more-templates .templates-list {
+    max-width: 710px;
+    margin: 0 auto;
+    text-align: left
+}
+
+.more-templates .templates-list li {
+    border-top: 1px solid #419b6c;
+    padding: 0;
+    font-weight: bold;
+    color: #419b6c;
+    font-size: 18px;
+    line-height: 24px
+}
+
+.more-templates .templates-list li a {
+    color: inherit;
+    display: block;
+    font-weight: inherit;
+    padding: 11px 0
+}
+
+.more-templates .templates-list li a:hover {
+    color: #000;
+    opacity: 1
+}
+
+.more-templates .templates-list li .view {
+    color: #000;
+    font-weight: 300;
+    float: right;
+    display: none
+}
+
+.more-templates .templates-list li:hover .view {
+    display: inline-block
+}
+
+@media all and (max-width: 767px) {
+    .more-templates .templates-list li .view {
+        display: none
+    }
+    .more-templates .templates-list li:hover .view {
+        display: none
+    }
+}
+
+.more-templates+.qa-box-promo {
+    margin-top: 0
+}

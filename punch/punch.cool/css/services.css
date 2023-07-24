@@ -1,0 +1,287 @@
+/* font-face {
+    font-family: myfont;
+    src: url(./Rene\ Bieder\ -\ Sagona-BookDEMO.otf);
+}
+body{
+    font-family: myfont;
+} */
+
+.color-primary {
+    color: #ffba00
+}
+
+.color-secondary {
+    color: #2349b6
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Thin.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-thin-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-thin-italic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-ExtraLight.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extralight-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extralight-italic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Light.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-light-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-light-italic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-book.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-book-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-book-italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Medium.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-medium-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-medium-italic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-SemiBold.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-semibold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-semibold-italic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-bold.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-bold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-bold-italic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extrabold.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extrabold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extrabold-italic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-heavy.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-heavy-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-heavy-italic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Thin.woff2") format("woff2"), url("../assets/typefaces/patron/PatronWEB-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-ThinItalic.woff2") format("woff2"), url("../assets/typefaces/patron/PatronWEB-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Light.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-LightItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Regular.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Italic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Medium.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-MediumItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Bold.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-BoldItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Black.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-BlackItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic
+}
+
+.content-section {
+    position: relative;
+    padding: 130px 0;
+    text-align: center
+}
+
+@media screen and (max-width: 960px) {
+    .content-section {
+        padding: 60px 0
+    }
+}
+
+.content-section .container {
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: auto
+}
+
+@media screen and (min-width: 1680px) {
+    .hidden-xlg {
+        display: none !important
+    }
+}
+
+.visible-lg {
+    display: none !important
+}
+
+@media screen and (min-width: 1400px) {
+    .visible-lg {
+        display: block !important
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hidden-lg {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hidden-md {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .hidden-sm {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hidden-xs {
+        display: none !important
+    }
+}
+
+.content>.list-array {
+    margin-top: 8%
+}

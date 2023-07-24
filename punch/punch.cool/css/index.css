@@ -1,0 +1,803 @@
+
+
+.color-primary {
+    color: #ffba00
+}
+
+.color-secondary {
+    color: #2349b6
+}
+
+/* @font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Thin.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-thin-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-thin-italic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-ExtraLight.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extralight-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extralight-italic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Light.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-light-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-light-italic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-book.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-book-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-book-italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Medium.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-medium-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-medium-italic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-SemiBold.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-semibold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-semibold-italic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-bold.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-bold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-bold-italic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extrabold.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extrabold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extrabold-italic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-heavy.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-heavy-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-heavy-italic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Thin.woff2") format("woff2"), url("../assets/typefaces/patron/PatronWEB-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-ThinItalic.woff2") format("woff2"), url("../assets/typefaces/patron/PatronWEB-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Light.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-LightItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Regular.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Italic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Medium.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-MediumItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Bold.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-BoldItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Black.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-BlackItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic
+} */
+@font-face {
+    font-family: Sagona;
+    src: url("/css/SAGONAEXTRALIGHT.TTF");
+
+    font-weight: 100;
+    font-style: normal
+ }
+
+
+
+.content-section {
+    position: relative;
+    padding: 130px 0;
+    text-align: center
+}
+
+@media screen and (max-width: 960px) {
+    .content-section {
+        padding: 60px 0
+    }
+}
+
+.content-section .container {
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: auto
+}
+
+@media screen and (min-width: 1680px) {
+    .hidden-xlg {
+        display: none !important
+    }
+}
+
+.visible-lg {
+    display: none !important
+}
+
+@media screen and (min-width: 1400px) {
+    .visible-lg {
+        display: block !important
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hidden-lg {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hidden-md {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .hidden-sm {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hidden-xs {
+        display: none !important
+    }
+}
+
+.header {
+    height: 70px
+}
+
+.home .section {
+    position: relative
+}
+
+.home .section>.heading {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 75px 80px 80px 80px;
+    z-index: 1
+}
+
+.home .section>.heading>.lockup {
+    padding: 80px 80px 0 90px
+}
+
+.home .section>.heading>.lockup>.title {
+    /* font-family: Sagona; */
+    font-weight: 100;
+    color: #2a2a2a;
+    font-size: 64px;
+    line-height: 72px
+}
+
+.home .section>.heading>.lockup>.title>em {
+    font-weight: inherit;
+    font-style: inherit;
+    background: #ffd300
+}
+
+@media screen and (max-width: 640px) {
+    .home .section>.heading>.lockup>.title {
+        font-size: 36px;
+        line-height: 44px
+    }
+}
+
+.home .section>.heading>.lockup>.subtitle {
+    /* font-family: Sagona; */
+    font-weight: 100;
+    color: #2a2a2a;
+    font-size: 64px;
+    line-height: 72px;
+    color: #707070;
+    font-style: italic
+}
+
+.home .section>.heading>.lockup>.subtitle>em {
+    font-weight: inherit;
+    font-style: inherit;
+    background: #ffd300
+}
+
+@media screen and (max-width: 640px) {
+    .home .section>.heading>.lockup>.subtitle {
+        font-size: 36px;
+        line-height: 44px
+    }
+}
+
+.home .section>.heading>.lockup>.button {
+    margin-top: 20px;
+    display: block;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-align: left;
+    background: transparent
+}
+
+.home .section>.heading>.lockup>.button>.title {
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+    color: #419b6c
+}
+
+.home .section>.heading>.lockup>.button>.graphic {
+    position: relative;
+    top: 1px;
+    left: 0;
+    margin-left: 3px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(/assets/images/shared/arrow_419b6c_right.png) no-repeat top center;
+    -webkit-background-size: 18px;
+    -moz-background-size: 18px;
+    background-size: 18px;
+    -webkit-transition: left 200ms ease;
+    -moz-transition: left 200ms ease;
+    transition: left 200ms ease
+}
+
+.home .section>.heading>.lockup>.button:hover>.graphic {
+    left: 3px;
+    animation: jiggle 400ms 0ms forwards
+}
+
+@media screen and (max-width: 640px) {
+    .home .section>.heading>.lockup>.button>.title {
+        font-size: 17px
+    }
+    .home .section>.heading>.lockup>.button>.graphic {
+        width: 14px;
+        height: 14px;
+        -webkit-background-size: 14px;
+        -moz-background-size: 14px;
+        background-size: 14px
+    }
+}
+
+.home .section.hero {
+    max-width: none;
+    margin-top: 5%;
+    z-index: 4;
+    height: 500px
+}
+
+.home .section.hero>.heading {
+    /* text-align: center; */
+    padding: 0
+}
+
+@media screen and (max-width: 1440px) {
+    .home .section.hero>.heading {
+        padding: 0 4%
+    }
+}
+
+.home .section.hero>.heading>.lockup {
+    padding: 0
+}
+
+.home .section.hero>.heading>.lockup>.title {
+    font-weight: 200
+}
+
+.home .section.hero>.heading>.lockup>.subtitle {
+    font-weight: 200;
+    color: #707070;
+    font-style: italic
+}
+
+.home .section.hero>.heading>.lockup>.button {
+    display: inline-block;
+    margin: 20px auto 0
+}
+
+.home .section.hero>.graphics {
+    position: absolute;
+    height: 1400px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+}
+
+.home .section.hero>.graphics>.graphic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+ /* .home .section.hero>.graphics>.graphic:first-of-type {
+    z-index: 2;
+    /* background-image: url(/assets/images/home/hero_cape_view_01.png); 
+    background-repeat: no-repeat;
+    background-position: top center
+}  */
+
+.home .section.hero>.graphics>.graphic:nth-of-type(2) {
+    z-index: 3;
+    background-image: url(/assets/images/home/logify_background.jpeg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+     height: 480px; 
+    
+}
+
+.home .section.hero>.graphics>.background {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    height: 940px;
+    width: 1220px;
+    z-index: 1;
+    background: #f7f5f2
+}
+
+@media screen and (max-width: 640px) {
+    .home .section.hero {
+        height: 450px
+    }
+    .home .section.hero>.heading>.lockup>.button {
+        margin-top: 1%
+    }
+    .home .section.hero>.graphics {
+        height: 720px
+    }
+    /* .home .section.hero>.graphics>.graphic {
+        -webkit-background-size: 1600px;
+        -moz-background-size: 1600px;
+        background-size: 1600px
+    } */
+}
+
+@media screen and (max-width: 480px) {
+    .home .section.hero {
+        height: 400px
+    }
+    .home .section.hero>.graphics {
+        height: 480px;
+        top: 80px
+    }
+    .home .section.hero>.graphics>.graphic {
+        -webkit-background-size: 1000px;
+        -moz-background-size: 1000px;
+        background-size: 1000px
+    }
+}
+
+.home .section.about-home-summary {
+    min-height: 940px;
+    /* margin-top: 70px; */
+    background: url(/assets/images/home/pexels-ivan-samkov-4458554.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    z-index: 3
+}
+
+@media screen and (max-width: 1440px) {
+    .home .section.about-home-summary {
+        height: auto
+    }
+}
+
+.home .section.about-home-summary>.heading {
+    margin: 0;
+    width: 70%
+}
+
+.home .section.about-home-summary>.heading>.lockup {
+    padding: 0
+}
+
+.home .section.about-home-summary>.heading>.lockup>.title {
+    font-style: italic;
+    line-height: 82px
+}
+
+.home .section.about-home-summary>.heading>.lockup>.subtitle {
+    font-style: normal;
+    line-height: 82px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+@media screen and (max-width: 960px) {
+    .home .section.about-home-summary {
+        min-height: unset
+    }
+    .home .section.about-home-summary>.heading {
+        width: 85%
+    }
+    .home .section.about-home-summary>.heading>.lockup>.title {
+        font-size: 48px;
+        line-height: inherit
+    }
+    .home .section.about-home-summary>.heading>.lockup>.subtitle {
+        font-size: 48px;
+        line-height: inherit
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home .section.about-home-summary {
+        margin-top: -50px
+    }
+    .home .section.about-home-summary>.heading {
+        padding: 6%;
+        width: 70%
+    }
+    .home .section.about-home-summary>.heading>.lockup>.title {
+        font-weight: 200;
+        font-size: 28px
+    }
+    .home .section.about-home-summary>.heading>.lockup>.subtitle {
+        font-weight: 200;
+        font-size: 28px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home .section.about-home-summary {
+        margin-top: 10px
+    }
+    .home .section.about-home-summary>.heading {
+        padding: 6%;
+        width: 90%
+    }
+}
+
+.home .section.recent-work>.tiles {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 4% 0 0
+}
+
+.home .section.recent-work>.tiles>.tile {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 48%;
+    position: relative;
+    background: #f7f5f2;
+    margin-bottom: 4%;
+    min-height: 480px
+}
+
+.home .section.recent-work>.tiles>.tile:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    background: #90c5be;
+    height: 4px;
+    top: 0;
+    left: 8%
+}
+
+.home .section.recent-work>.tiles>.tile>.heading {
+    position: relative;
+    padding: 0 8%;
+    flex: 1;
+    -webkit-flex: 1
+}
+
+.home .section.recent-work>.tiles>.tile>.heading>.lockup {
+    padding: 6% 0
+}
+
+.home .section.recent-work>.tiles>.tile>.heading>.lockup>.title {
+    font-family: Sagona;
+    font-weight: 100;
+    color: #2a2a2a;
+    font-size: 64px;
+    line-height: 72px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 900
+}
+
+.home .section.recent-work>.tiles>.tile>.heading>.lockup>.title>em {
+    font-weight: inherit;
+    font-style: inherit;
+    background: #ffd300
+}
+
+@media screen and (max-width: 640px) {
+    .home .section.recent-work>.tiles>.tile>.heading>.lockup>.title {
+        font-size: 36px;
+        line-height: 44px
+    }
+}
+
+.home .section.recent-work>.tiles>.tile>.heading>.lockup>.subtitle {
+    font-family: Sagona;
+    font-weight: 100;
+    color: #2a2a2a;
+    font-size: 64px;
+    line-height: 72px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 900;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.home .section.recent-work>.tiles>.tile>.heading>.lockup>.subtitle>em {
+    font-weight: inherit;
+    font-style: inherit;
+    background: #ffd300
+}
+
+@media screen and (max-width: 640px) {
+    .home .section.recent-work>.tiles>.tile>.heading>.lockup>.subtitle {
+        font-size: 36px;
+        line-height: 44px
+    }
+}
+
+.home .section.recent-work>.tiles>.tile>.heading>.lockup>.button {
+    margin-top: 10px;
+    background-color: transparent !important;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-align: left
+}
+
+.home .section.recent-work>.tiles>.tile>.heading>.lockup>.button>.title {
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+    color: #419b6c
+}
+
+.home .section.recent-work>.tiles>.tile>.heading>.lockup>.button>.graphic {
+    position: relative;
+    top: 1px;
+    left: 0;
+    margin-left: 3px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(/assets/images/shared/arrow_419b6c_right.png) no-repeat top center;
+    -webkit-background-size: 18px;
+    -moz-background-size: 18px;
+    background-size: 18px;
+    -webkit-transition: left 200ms ease;
+    -moz-transition: left 200ms ease;
+    transition: left 200ms ease
+}
+
+.home .section.recent-work>.tiles>.tile>.heading>.lockup>.button:hover>.graphic {
+    left: 3px;
+    animation: jiggle 400ms 0ms forwards
+}
+
+@media screen and (max-width: 640px) {
+    .home .section.recent-work>.tiles>.tile>.heading>.lockup>.button>.title {
+        font-size: 17px
+    }
+    .home .section.recent-work>.tiles>.tile>.heading>.lockup>.button>.graphic {
+        width: 14px;
+        height: 14px;
+        -webkit-background-size: 14px;
+        -moz-background-size: 14px;
+        background-size: 14px
+    }
+}
+
+.home .section.recent-work>.tiles>.tile>.graphics>.graphic>img {
+    display: block;
+    max-width: 100%
+}
+
+@media screen and (max-width: 1280px) {
+    .home .section.recent-work>.tiles {
+        padding: 4% 4% 0
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home .section.recent-work>.tiles>.tile>.heading {
+        padding-top: 8%
+    }
+    .home .section.recent-work>.tiles>.tile>.heading>.lockup>.title {
+        display: none;
+        font-size: 24px;
+        line-height: 32px
+    }
+    .home .section.recent-work>.tiles>.tile>.heading>.lockup>.subtitle {
+        font-style: normal;
+        color: #000;
+        font-size: 18px;
+        line-height: 24px
+    }
+}
+
+@media screen and (max-width: 640px) and (max-width: 640px) {
+    .home .section.recent-work>.tiles {
+        display: block
+    }
+    .home .section.recent-work>.tiles>.tile {
+        width: 100%
+    }
+    .home .section.recent-work>.tiles>.tile>.heading {
+        padding-top: 8%
+    }
+    .home .section.recent-work>.tiles>.tile>.heading>.lockup>.title {
+        display: none;
+        font-size: 24px;
+        line-height: 32px
+    }
+    .home .section.recent-work>.tiles>.tile>.heading>.lockup>.subtitle {
+        font-style: normal;
+        color: #000;
+        font-size: 18px;
+        line-height: 24px
+    }
+}

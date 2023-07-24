@@ -1,0 +1,557 @@
+
+
+.color-primary {
+    color: #ffba00
+}
+
+.color-secondary {
+    color: #2349b6
+}
+
+/* @font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Thin.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-thin-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-thin-italic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-ExtraLight.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extralight-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extralight-italic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Light.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-light-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-light-italic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-book.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-book-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-book-italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-Medium.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-medium-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-medium-italic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/Sagona-SemiBold.woff2") format("woff2"), url("/assets/typefaces/sagona/Sagona-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-semibold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-semibold-italic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-bold.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-bold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-bold-italic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extrabold.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-extrabold-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-extrabold-italic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-heavy.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sagona";
+    src: url("/assets/typefaces/sagona/sagona-heavy-italic.woff2") format("woff2"), url("/assets/typefaces/sagona/sagona-heavy-italic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Thin.woff2") format("woff2"), url("../assets/typefaces/patron/PatronWEB-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-ThinItalic.woff2") format("woff2"), url("../assets/typefaces/patron/PatronWEB-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Light.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-LightItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Regular.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Italic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Medium.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-MediumItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Bold.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-BoldItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-Black.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Patron";
+    src: url("../assets/typefaces/patron/PatronWEB-BlackItalic.woff") format("woff"), url("../assets/typefaces/patron/PatronWEB-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic
+} */
+
+.content-section {
+    position: relative;
+    padding: 130px 0;
+    text-align: center
+}
+
+@media screen and (max-width: 960px) {
+    .content-section {
+        padding: 60px 0
+    }
+}
+
+.content-section .container {
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: auto
+}
+
+@media screen and (min-width: 1680px) {
+    .hidden-xlg {
+        display: none !important
+    }
+}
+
+.visible-lg {
+    display: none !important
+}
+
+@media screen and (min-width: 1400px) {
+    .visible-lg {
+        display: block !important
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hidden-lg {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hidden-md {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .hidden-sm {
+        display: none !important
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hidden-xs {
+        display: none !important
+    }
+}
+
+.content>.hero>.lockup>.heading>.title {
+    font-family: Sagona, Georgia, serif;
+    font-weight: 900;
+    color: #111;
+    font-size: 40px;
+    line-height: 48px;
+    color: #2349b6
+}
+
+@media screen and (max-width: 480px) {
+    .content>.hero>.lockup>.heading>.title {
+        font-size: 30px;
+        line-height: 32px
+    }
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group {
+    position: relative;
+    height: 60px
+}
+
+@keyframes crossfade {
+    3% {
+        opacity: 1
+    }
+    5% {
+        opacity: 0
+    }
+    97% {
+        opacity: 0
+    }
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile {
+    background-color: #f4f4f4;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    padding-left: 2px
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(1) {
+    animation: crossfade 40s 38s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(2) {
+    animation: crossfade 40s 36s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(3) {
+    animation: crossfade 40s 34s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(4) {
+    animation: crossfade 40s 32s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(5) {
+    animation: crossfade 40s 30s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(6) {
+    animation: crossfade 40s 28s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(7) {
+    animation: crossfade 40s 26s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(8) {
+    animation: crossfade 40s 24s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(9) {
+    animation: crossfade 40s 22s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(10) {
+    animation: crossfade 40s 20s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(11) {
+    animation: crossfade 40s 18s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(12) {
+    animation: crossfade 40s 16s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(13) {
+    animation: crossfade 40s 14s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(14) {
+    animation: crossfade 40s 12s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(15) {
+    animation: crossfade 40s 10s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(16) {
+    animation: crossfade 40s 8s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(17) {
+    animation: crossfade 40s 6s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(18) {
+    animation: crossfade 40s 4s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(19) {
+    animation: crossfade 40s 2s infinite
+}
+
+.content>.hero>.lockup>.heading>.title .tile-group .tile:nth-child(20) {
+    animation: crossfade 40s 0s infinite
+}
+
+.offices-list {
+    background: #f4f4f4;
+    padding: 120px 0
+}
+
+.offices-list>.lockup>.heading {
+    text-align: center;
+    margin: 0 auto 30px
+}
+
+.offices-list>.lockup>.heading>.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #000
+}
+
+.offices-list>.lockup>.heading>.graphic {
+    width: 80px;
+    margin: 20px auto 15px
+}
+
+.offices-list>.lockup>.heading>.title {
+    font-family: Sagona, Georgia, serif;
+    font-weight: 900;
+    color: #111;
+    font-size: 40px;
+    line-height: 48px;
+    color: #2349b6;
+    width: 720px;
+    margin: 0 auto 30px
+}
+
+@media screen and (max-width: 480px) {
+    .offices-list>.lockup>.heading>.title {
+        font-size: 30px;
+        line-height: 32px
+    }
+}
+
+.offices-list>.lockup>.heading>.description {
+    color: #27282a;
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 500;
+    width: 880px;
+    margin: 0 auto
+}
+
+@media screen and (max-width: 480px) {
+    .offices-list>.lockup>.heading>.description {
+        font-size: 16px;
+        line-height: 22px
+    }
+}
+
+.offices-list>.tile-group {
+    margin: 80px auto 0;
+    width: 880px
+}
+
+.offices-list>.tile-group:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.offices-list>.tile-group>.tile {
+    text-align: center;
+    float: left;
+    width: 50%;
+    min-height: 200px;
+    padding: 0 3% 5% 0
+}
+
+.offices-list>.tile-group>.tile>.heading>.title {
+    font-family: Sagona, Georgia, serif;
+    font-weight: 900;
+    color: #111;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    min-height: 60px;
+    margin: 0 0 10px
+}
+
+@media screen and (max-width: 480px) {
+    .offices-list>.tile-group>.tile>.heading>.title {
+        font-size: 20px;
+        line-height: 24px
+    }
+}
+
+.offices-list>.tile-group>.tile>.heading>.title:before {
+    display: block;
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    height: 2px;
+    width: 40px;
+    margin: 0 auto 15px
+}
+
+.offices-list>.tile-group>.tile>.heading>.description {
+    color: #27282a;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5c5e63;
+    color: #7f7f7f;
+    margin: 0 auto
+}
+
+@media screen and (max-width: 480px) {
+    .offices-list>.tile-group>.tile>.heading>.description {
+        font-size: 16px;
+        line-height: 22px
+    }
+}
+
+.offices-list>.tile-group>.tile>.heading>.description em {
+    color: #111;
+    font-style: normal
+}
+
+@media screen and (max-width: 960px) {
+    .offices-list {
+        background: #f4f4f4;
+        margin-top: 8%;
+        padding: 10% 5%
+    }
+    .offices-list>.lockup>.heading {
+        text-align: center;
+        margin: 0 auto 4%
+    }
+    .offices-list>.lockup>.heading>.graphic {
+        margin: 3% auto
+    }
+    .offices-list>.lockup>.heading>.title {
+        width: auto;
+        margin: 0 auto 3%
+    }
+    .offices-list>.lockup>.heading>.description {
+        width: auto;
+        padding: 0 10%
+    }
+    .offices-list>.tile-group {
+        margin: 4% 0 0;
+        width: auto
+    }
+    .offices-list>.tile-group>.tile {
+        float: none;
+        width: 100%;
+        min-height: unset;
+        padding: 5%
+    }
+}

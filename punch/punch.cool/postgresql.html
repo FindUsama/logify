@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PostgreSQL interview questions - Punch</title>
+
+    <!-- Meta -->
+    <meta name="keywords" content="PostgreSQL" />
+    <meta name="description" content="PostgreSQL">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/shared/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/shared/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/shared/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/shared/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/shared/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/shared/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/shared/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/shared/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/shared/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/assets/images/shared/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/images/shared/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/images/shared/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/images/shared/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/images/shared/favicon/manifest.json">
+    <link rel="mask-icon" href="/assets/images/shared/favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="apple-mobile-web-app-title" content="Punch">
+    <meta name="application-name" content="Punch">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/assets/images/shared/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="/assets/images/shared/favicon.ico">
+
+    <!-- Social media -->
+    <meta property="og:image" content="/assets/images/shared/meta/punch_avatar.png">
+    <meta property="og:site_name" content="Punch">
+    <meta name="twitter:image" content="/assets/images/shared/meta/punch_avatar.png">
+    <meta name="twitter:creator" content="@punch_agency">
+
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6341356/6821172/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/css/base.css?1647507499012">
+    <link rel="stylesheet" type="text/css" href="/css/questions.css?1647507499012" />
+
+
+    <noscript>
+        <style type="text/css">
+            body {opacity:1}
+        </style>
+    </noscript>
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function(e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = t.forceSSL || "https:" === document.location.protocol,
+                a = document.createElement("script");
+            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(a, n);
+            for (var o = function(e) {
+                    return function() {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+        };
+        heap.load("3165680534");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PNZ5FLC');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="questions">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNZ5FLC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="announcement">
+        <div class="announcement_wrap">
+            <span class="announcement_wrapin">Schedule a <em>30 minute</em> appointment with a <em>client advisor</em> today. <a href="/contact"> Start <span class="graphic"></span></a>
+            </span>
+            <span class="quotes-rotator">
+                    <div id="cbp-qtrotator" class="cbp-qtrotator">
+                    </div>
+                </span>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="bar">
+            <a href="/" class="logo">
+                    <img src="/assets/images/shared/punch_000000.svg" alt="Punch" />
+                </a>
+            <div class="toolbar">
+
+                <!-- Eventually merge these two pieces -->
+                <div class="menu mobile-menu-trigger">Menu</div>
+                <div class="close mobile-menu-trigger">
+                    <span class="label">Close</span>
+                    <span class="icon">
+                            <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                    </span>
+                </div>
+                <div class="navigation-lite">
+                    <div class="content">
+                        <div class="header-lite">
+                            <div class="lockup">
+                                <div class="parent">
+
+
+
+
+
+
+
+                                </div>
+                                <div class="child"></div>
+                            </div>
+                        </div>
+                        <div class="navigation" id="mobile-menu-placeholder"></div>
+                        <script>
+                            $(function () {
+                                $("#mobile-menu-placeholder").load("mobile-menu.html");
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation" id="menu-placeholder"></div>
+            <script>
+                $(function () {
+                    $("#menu-placeholder").load("menu.html");
+                });  
+            </script>
+        </div>
+    </div>
+    <style>
+        .header {
+            margin-top: 52px;
+        }
+
+        .socials a:hover {
+            color: #ffffff !important;
+        }
+
+        .contact .announcement {
+            display: none;
+        }
+
+        .contact .header {
+            margin-top: 0px !important;
+        }
+
+        .cbp-qtcontent .testimonial {
+            margin: 0px !important;
+        }
+
+        .cbp-qtcontent .testimonial .quote-group {
+            padding: 0 0 !important;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: flex-start;
+            background: none;
+        }
+
+        .cbp-qtcontent section.testimonial>.quote-group>.secondary>.lockup>.heading>.title,
+        .cbp-qtcontent section.testimonial>.quote-group>.secondary>.lockup>.heading>.title-secondary {
+            margin-bottom: 0;
+            font-size: 0.8em;
+            text-align: left;
+        }
+
+        .cbp-qtcontent .quote-group .primary {
+            order: 0;
+            align-self: auto;
+            width: 70%;
+            padding-right: 1.5em;
+        }
+
+        .cbp-qtcontent .quote-group .secondary {
+            order: 0;
+            width: 30%;
+            align-self: auto;
+        }
+
+        .cbp-qtcontent section.testimonial>.quote-group>.secondary {
+            margin: 0;
+        }
+
+        .cbp-qtcontent section.testimonial>.quote-group>.primary>.quote>blockquote>q {
+            font-size: 1.6em;
+            line-height: 1.2;
+            color: #fff;
+            display: inline;
+        }
+
+        .cbp-qtcontent section.testimonial>.quote-group>.primary>.quote>blockquote>q:before {
+            position: absolute;
+            text-indent: -9999em;
+            top: -33px;
+            left: -60px;
+            display: block;
+            height: 150px;
+            z-index: -1;
+            width: 150px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-image: url(/assets/images/shared/quote_raster.png);
+            background-size: 131px 95px;
+        }
+
+        .header {
+            position: relative;
+        }
+
+        .phone-inner {
+            letter-spacing: 0.05rem;
+            vertical-align: middle;
+            border: 0.5px solid currentColor;
+            border-radius: 0.4rem;
+            transition: color 0.2s;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            padding-top: 0.2em;
+            padding-bottom: 0.2em;
+            color: #000;
+        }
+
+        .phone-inner .icon svg {
+            width: 22px;
+            height: 17px;
+        }
+
+        .phone-wrap:hover svg {
+            animation: jiggle 400ms 0ms forwards;
+        }
+
+        .phone-wrap:hover {
+            background: none;
+        }
+
+        .tablet-phone {
+            display: none;
+        }
+
+        body.menu-opened .announcement {
+            display: none;
+        }
+
+        .announcement {
+            background: #ffd300;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 5;
+            overflow: hidden;
+            z-index: 10;
+            max-height: 63px;
+            -webkit-transition: background-color .4s ease-out .4s, max-height .4s ease-out .4s;
+            transition: background-color .4s ease-out .4s, max-height .4s ease-out .4s;
+        }
+
+        .fixedheader.announcement {
+            background-color: #244bb6;
+            max-height: 600px;
+        }
+
+        .announcement_wrap {
+            max-width: 1376px;
+            margin: 0 auto;
+            text-align: left;
+            padding: .5em;
+            position: relative;
+        }
+
+        .announcement_wrap>span a {
+            font-size: 22px;
+            position: relative;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 6px;
+            color: #419b6c;
+            font-style: normal;
+            font-family: Patron, Avenir, sans-serif;
+        }
+
+        .announcement_wrap>span a:hover {
+            background: none;
+        }
+
+        .announcement_wrap .graphic {
+            position: relative;
+            top: 1px;
+            left: 0;
+            margin-left: 3px;
+            width: 18px;
+            display: inline-block;
+            height: 18px;
+            background: url(/assets/images/shared/arrow_419b6c_right.png) no-repeat top center;
+            -webkit-background-size: 18px;
+            -moz-background-size: 18px;
+            background-size: 18px;
+            -webkit-transition: 200ms ease;
+            -moz-transition: 200ms ease;
+            transition: 200ms ease;
+        }
+
+        .announcement_wrap>span a:hover>.graphic {
+            left: 3px;
+            animation: jiggle 400ms 0ms forwards;
+        }
+
+        .phone-wrap {
+            float: right;
+            overflow: hidden;
+            border-radius: 0.4rem;
+        }
+
+        .announcement_wrapin,
+        .quotes-rotator {
+            width: 100%;
+            display: block;
+        }
+
+        .quotes-rotator {
+            z-index: 2;
+            display: none;
+            width: 100%;
+            top: 18px;
+            color: rgba(255, 255, 255, 0);
+            visibility: hidden;
+            -webkit-transition: visibility .4s ease-out .4s, color .4s ease-out .4s;
+            transition: visibility .4s ease-out .4s, color .4s ease-out .4s;
+        }
+
+        .fixedheader .quotes-rotator {
+            position: relative;
+            visibility: visible;
+            top: 0;
+            color: #fff;
+        }
+
+        .fixedheader .announcement_wrapin {
+            z-index: 3;
+            color: rgba(255, 255, 255, 0);
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: visibility .4s ease-out .4s, color .4s ease-out .4s, opacity .4s ease-out .4s;
+            transition: visibility .4s ease-out .4s, color .4s ease-out .4s, opacity .4s ease-out .4s;
+        }
+
+        .announcement_wrapin a {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transition: visibility .4s ease-out .4s, color .4s ease-out .4s, opacity .4s ease-out .4s;
+            transition: visibility .4s ease-out .4s, color .4s ease-out .4s, opacity .4s ease-out .4s;
+        }
+
+        .fixedheader .announcement_wrapin a {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .announcement_wrapin em {
+            font-family: "Patron", Avenir, sans-serif;
+            font-weight: 900;
+        }
+
+        .announcement_wrapin {
+            color: #000;
+            visibility: visible;
+            overflow: hidden;
+            font-style: italic;
+            opacity: 1;
+            font-size: 1.4em;
+            font-family: Sagona, Georgia, serif;
+            position: relative;
+            width: 100%;
+        }
+
+        .cbp-qtcontent blockquote p,
+        .cbp-qtcontent blockquote footer {
+            display: inline;
+        }
+
+        .cbp-qtrotator {
+            position: relative;
+            width: 100%;
+        }
+
+        .cbp-qtrotator .cbp-qtcontent {
+            /*position: absolute;*/
+            top: 0;
+            z-index: 0;
+            /*opacity: 0;*/
+            width: 100%;
+            display: none;
+            /*transition: opacity 700ms ease 0s;*/
+        }
+
+        .no-js .cbp-qtrotator .cbp-qtcontent {
+            border-bottom: none;
+        }
+
+        .cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+        .no-js .cbp-qtrotator .cbp-qtcontent {
+            position: relative;
+            z-index: 100;
+            pointer-events: auto;
+            opacity: 1;
+        }
+
+        .cbp-qtrotator blockquote footer:before {
+            content: '― ';
+        }
+
+        /* .cbp-qtcontent blockquote p:before {
+                position: absolute;
+                text-indent: -9999em;
+                top: -220px;
+                left: -140px;
+                display: block;
+                height: 205px;
+                width: 271px;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-image: url(/assets/images/shared/quote_raster.png);
+                -webkit-background-size: 271px 205px;
+                -moz-background-size: 271px 205px;
+                background-size: 271px 205px;
+            } */
+
+        @media screen and (min-width: 1661px) {
+            .announcement_wrap {
+                max-width: 1440px;
+                padding: .5em 0;
+            }
+        }
+
+        @media screen and (max-width: 1660px) and (min-width: 480px) {
+            .announcement_wrap {
+                margin-left: 8%;
+                margin-right: 8%;
+                padding: .5em 0;
+            }
+        }
+
+        @media screen and (max-width: 1440px) {
+            .announcement_wrap {
+                margin: 0 4% 0;
+            }
+        }
+
+        @media screen and (max-width: 760px) {
+            .announcement_wrap {
+                margin: 0 7% 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .announcement_wrap {
+                margin: 0 4% 0;
+            }
+        }
+
+        @media screen and (max-width: 960px) {
+            .cbp-qtcontent .secondary .heading * {
+                text-align: right !important;
+            }
+            .announcement_wrap>span a {
+                font-size: 17px !important;
+            }
+            .announcement_wrap>span {
+                font-size: 17px;
+            }
+            .announcement_wrap .graphic {
+                width: 14px;
+                height: 14px;
+                -webkit-background-size: 14px;
+                -moz-background-size: 14px;
+                background-size: 14px;
+            }
+            .cbp-qtcontent section.testimonial>.quote-group>.primary>.quote>blockquote>q {
+                font-size: 18px;
+            }
+            .cbp-qtcontent section.testimonial>.quote-group>.secondary>.lockup>.heading>.title,
+            .cbp-qtcontent section.testimonial>.quote-group>.secondary>.lockup>.heading>.title-secondary {
+                font-size: 8px;
+            }
+            /* .cbp-qtcontent .quote-group .primary , .cbp-qtcontent .quote-group .secondary { width:100% } */
+            .cbp-qtcontent .quote-group {
+                /* flex-direction: column !important; */
+            }
+            .tablet-phone {
+                display: inline;
+            }
+            .desktop-phone {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .phone-wrap {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= 113) {
+                    $('.announcement').addClass('fixedheader');
+                    $('.announcement_wrapin').fadeOut(400, function() {
+                        $('.quotes-rotator').fadeIn(400);
+                    })
+                } else {
+                    $('.announcement').removeClass('fixedheader');
+                    $('.quotes-rotator').fadeOut(200, function() {
+                        $('.announcement_wrapin').fadeIn(200);
+                    })
+                }
+            });
+            var testimonialsData = [{
+                    "quote": "Thanks dude. You&rsquo;re <em>saving my butt</em> more than you could ever imagine #blessed #myhero.",
+                    "author": "Arash Namvar",
+                    "company": "Engineer at FogHorn Systems"
+                },
+                {
+                    "quote": "<em>Betting a dollar</em> Amazon copies the design.",
+                    "author": "Charles Cushing",
+                    "company": "COO of Twice"
+                },
+                {
+                    "quote": "In just three months, <em>Punch did the impossible</em> for our product team: they moved mountains.",
+                    "author": "David Sanghera",
+                    "company": "Head of Product of 1-Page"
+                },
+                {
+                    "quote": "Punch enabled us to deliver on time and they&rsquo;ve been <em>heavy hitters</em> in our corner since.",
+                    "author": "David Sanghera",
+                    "company": "Head of Product of 1-Page"
+                },
+                {
+                    "quote": "This. Is. <em>Outstanding.</em> Sexy.",
+                    "author": "Hans Stier",
+                    "company": "CEO of Bonaverde"
+                },
+                {
+                    "quote": "<em>Very very happy</em> to have Punch on the team.",
+                    "author": "Joanna Weidenmiller",
+                    "company": "CEO of 1-Page"
+                },
+                {
+                    "quote": "<em>Punch delivers</em>, plain and simple.",
+                    "author": "James Gutierrez",
+                    "company": "Founder of Insikt"
+                },
+                {
+                    "quote": "If you want <em>real development that works</em> and effective implementation &mdash; Punch&rsquo;s got you covered.",
+                    "author": "Justin Grant",
+                    "company": "Founder of ScrubPay"
+                },
+                {
+                    "quote": "Punch took the time to understand our needs &mdash; both on the <em>technical</em> side, and on the <em>company</em> culture side &mdash;",
+                    "author": "Nathan Beckord",
+                    "company": "CEO of Foundersuite"
+                },
+                {
+                    "quote": "<em>Delivered an excellent engineer</em> who is doing great work.",
+                    "author": "Nathan Beckord",
+                    "company": "CEO of Foundersuite"
+                },
+                {
+                    "quote": "Our checkout UX is basically <em>5 years in the future</em> now",
+                    "author": "Noah Ready-Campbell",
+                    "company": "CEO of Twice"
+                }
+            ]
+
+            function shuffle(array) {
+                var currentIndex = array.length,
+                    temporaryValue, randomIndex;
+                while (0 !== currentIndex) {
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex -= 1;
+                    temporaryValue = array[currentIndex];
+                    array[currentIndex] = array[randomIndex];
+                    array[randomIndex] = temporaryValue;
+                }
+                return array;
+            }
+            arr = shuffle(testimonialsData);
+            $.each(testimonialsData, function(i, item) {
+                var html = '<div class="cbp-qtcontent">';
+                html += '<section class="base base-layout testimonial">';
+                html += '<section class="quote-group">';
+                html += '<div class="primary">';
+                html += '<div class="quote">';
+                html += '<blockquote>';
+                html += '<q>' + testimonialsData[i].quote + '</q>';
+                html += '</blockquote>';
+                html += '</div>';
+                html += '</div>';
+                html += '<div class="secondary">';
+                html += '<div class="lockup">';
+                html += '<div class="heading">';
+                html += '<h3 class="title">' + testimonialsData[i].author + '</h3>';
+                html += '<p class="title-secondary">' + testimonialsData[i].company + '</p>';
+                html += '</div>';
+                html += '</div>';
+                html += '</div>';
+                html += '</section>';
+                html += '</section>';
+                html += '</div>';
+                $('#cbp-qtrotator').append(html);
+            });
+            const elemCount = $('.cbp-qtcontent').length;
+            let i = 1;
+            setInterval(() => {
+                $('.cbp-qtcontent:nth-child(' + i + ')').fadeIn().siblings('.cbp-qtcontent').hide();
+                i == elemCount ? i = 1 : i++
+            }, 4000);
+            // }
+
+        });
+    </script>
+
+    <div class="content">
+
+        <div class="ask-hero-section">
+            <div class="container">
+
+                <div class="top">
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/punchpicks" title="Visit Facebook account" class="fa fa-facebook"></a></li>
+                        <li><a href="https://twitter.com/punchpicks" class="fa fa-twitter" title="Visit Twitter account"></a></li>
+                        <li><a href="https://www.linkedin.com/in/punchpicks" title="Visit LinkedIn account" class="fa fa-linkedin"></a></li>
+                    </ul>
+                    <div class="btn-holder">
+                        <a href="mailto:work@punch.cool" title="Become a Punch Developer"><span>Become a Punch Developer</span></a>
+                        <a href="./contact.html" class="btn btn-green btn-green-sm" title="Hire us">Hire us</a>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="head-block">
+                            <div class="subtitle">Engineering, Design, Marketing, and More</div>
+                            <h2 class="title">PostgreSQL interview questions</h2>
+                            <h3 class="subheading">The most popular questions</h3>
+                            <p class="description">Use our complementary questions and answers to filter and hire the best. Questions crowdsourced by our clients, answers by Punch. We provide these complementary questions to help our clients more quickly create tests for potential
+                                hires at their organizations.</p>
+                            <a class="btn btn-green" href="#ask-question" title="Get a question answered">Get a question answered</a>
+                            <div class="or-text">
+                                <a href="/services/engineering/" title="Browse engineering services">Or, browse engineering services</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="/assets/images/landing/instore-analytics-mobile-point-of-sale@2x.png" alt="Punch offers four divisions of services: design, engineering, staffing, and demand" width="1071">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ask-section">
+            <div class="container">
+                <div class="head-block">
+                    <h2 class="subheading">Interview questions for your next interview</h2>
+                    <div class="links"><a href="mailto:?subject=PostgreSQL interview questions&body=Hey, I found those PostgreSQL interview questions, I thought we could use them. Take a look at the page and let me know what you think. http://www.punch.cool/questions/postgresql"
+                            title="E-mail a friend">E-mail a friend</a> | <a href="" title="Download text file">Download text file</a></div>
+                </div>
+
+                <article class="qa-box">
+                    <div class="cell cell-question">
+                        <strong class="head">Question</strong>
+                        <div class="question">
+                            What is Multi version concurrency control?
+                        </div>
+                    </div>
+                    <div class="cell cell-answer">
+                        <strong class="head">Answer</strong>
+                        <div class="answer">
+                            Multi version concurrency control or MVCC is used to avoid unnecessary locking of the database. This removes the time lag for the user to log into his database. This feature or time lag occurs when someone else is accessing the content. All the transactions
+                            are kept as a record.
+                        </div>
+                        <ul class="socials">
+                            <li><a href="https://www.facebook.com/punchpicks" title="Visit Facebook account" class="fa fa-facebook"></a></li>
+                            <li><a href="https://twitter.com/punchpicks" class="fa fa-twitter" title="Visit Twitter account"></a></li>
+                            <li><a href="https://www.linkedin.com/in/punchpicks" title="Visit LinkedIn account" class="fa fa-linkedin"></a></li>
+                        </ul>
+                        <div class="correction-link">
+                            <a href="mailto:bugs@punch.cool" title="Send a correction">Send a correction</a>
+                        </div>
+
+                        <!--div class="blur-bg">
+                                <a href="#" class="btn btn-white j-show-answer" title="Reveal answer">Reveal answer</a>
+                            </div-->
+                    </div>
+                </article>
+
+                <article class="qa-box">
+                    <div class="cell cell-question">
+                        <strong class="head">Question</strong>
+                        <div class="question">
+                            What is a sequence?
+                        </div>
+                    </div>
+                    <div class="cell cell-answer">
+                        <strong class="head">Answer</strong>
+                        <div class="answer">
+                            A sequence is a special kind of database object designed for generating unique numeric identifiers. It is typically used to generate artificial primary keys. Sequences are similar, but not identical, to the AUTO_INCREMENT concept in MySQL.
+                        </div>
+                        <ul class="socials">
+                            <li><a href="https://www.facebook.com/punchpicks" title="Visit Facebook account" class="fa fa-facebook"></a></li>
+                            <li><a href="https://twitter.com/punchpicks" class="fa fa-twitter" title="Visit Twitter account"></a></li>
+                            <li><a href="https://www.linkedin.com/in/punchpicks" title="Visit LinkedIn account" class="fa fa-linkedin"></a></li>
+                        </ul>
+                        <div class="correction-link">
+                            <a href="mailto:bugs@punch.cool" title="Send a correction">Send a correction</a>
+                        </div>
+
+                        <!--div class="blur-bg">
+                                <a href="#" class="btn btn-white j-show-answer" title="Reveal answer">Reveal answer</a>
+                            </div-->
+                    </div>
+                </article>
+
+                <div class="qa-box qa-box-promo">
+                    <div class="cell">
+                        <div class="head-block">
+                            <h2 class="subheading">Find developers today</h2>
+                            <h3 class="title">Hire a Punch engineer</h3>
+                            <p class="description">Punch offers four divisions of services: design, engineering, staffing, and demand. Our four divisions form the core of our People Forward Approach.</p>
+                            <a href="./contact.html" class="btn btn-green btn-green-sm" title="Contact us">Contact us</a>
+                        </div>
+                    </div>
+                    <img class="bg-img" src="/assets/images/questions/cape-mission-mode-isometric@2x.png" alt="Find developers today">
+                </div>
+
+                <article class="qa-box">
+                    <div class="cell cell-question">
+                        <strong class="head">Question</strong>
+                        <div class="question">
+                            Is possible to create a shared-storage PostgreSQL server cluster?
+                        </div>
+                    </div>
+                    <div class="cell cell-answer">
+                        <strong class="head">Answer</strong>
+                        <div class="answer">
+                            PostgreSQL does not support clustering using shared storage on a SAN, SCSI backplane, iSCSI volume, or other shared media. Such "RAC-style" clustering isn't supported. Only replication-based clustering is currently supported.
+                        </div>
+                        <ul class="socials">
+                            <li><a href="https://www.facebook.com/punchpicks" title="Visit Facebook account" class="fa fa-facebook"></a></li>
+                            <li><a href="https://twitter.com/punchpicks" class="fa fa-twitter" title="Visit Twitter account"></a></li>
+                            <li><a href="https://www.linkedin.com/in/punchpicks" title="Visit LinkedIn account" class="fa fa-linkedin"></a></li>
+                        </ul>
+                        <div class="correction-link">
+                            <a href="mailto:bugs@punch.cool" title="Send a correction">Send a correction</a>
+                        </div>
+
+                        <!--div class="blur-bg">
+                                <a href="#" class="btn btn-white j-show-answer" title="Reveal answer">Reveal answer</a>
+                            </div-->
+                    </div>
+                </article>
+
+                <article class="qa-box">
+                    <div class="cell cell-question">
+                        <strong class="head">Question</strong>
+                        <div class="question">
+                            What are indices in PostgreSQL?
+                        </div>
+                    </div>
+                    <div class="cell cell-answer">
+                        <strong class="head">Answer</strong>
+                        <div class="answer">
+                            There are built in functions such as B-tree, hash table, and GIST indices can be used or users can define their own indices. PostgreSQL can scan the index backwards. An expression index can be created with the addition of a WHERE clause. Partial index
+                            created with addition of WHERE clause.
+                        </div>
+                        <ul class="socials">
+                            <li><a href="https://www.facebook.com/punchpicks" title="Visit Facebook account" class="fa fa-facebook"></a></li>
+                            <li><a href="https://twitter.com/punchpicks" class="fa fa-twitter" title="Visit Twitter account"></a></li>
+                            <li><a href="https://www.linkedin.com/in/punchpicks" title="Visit LinkedIn account" class="fa fa-linkedin"></a></li>
+                        </ul>
+                        <div class="correction-link">
+                            <a href="mailto:bugs@punch.cool" title="Send a correction">Send a correction</a>
+                        </div>
+
+                        <!--div class="blur-bg">
+                                <a href="#" class="btn btn-white j-show-answer" title="Reveal answer">Reveal answer</a>
+                            </div-->
+                    </div>
+                </article>
+
+                <article class="qa-box">
+                    <div class="cell cell-question">
+                        <strong class="head">Question</strong>
+                        <div class="question">
+                            What are string constants in PostgreSQL?
+                        </div>
+                    </div>
+                    <div class="cell cell-answer">
+                        <strong class="head">Answer</strong>
+                        <div class="answer">
+                            String constants contain a sequence of characters bound by single quotes. This feature is used during the insertion of a character or passing a character to database objects. PostgreSQL allows the usage of single quotes but embedded by a C style backslash.
+                            This feature is important in parsing data.
+                        </div>
+                        <ul class="socials">
+                            <li><a href="https://www.facebook.com/punchpicks" title="Visit Facebook account" class="fa fa-facebook"></a></li>
+                            <li><a href="https://twitter.com/punchpicks" class="fa fa-twitter" title="Visit Twitter account"></a></li>
+                            <li><a href="https://www.linkedin.com/in/punchpicks" title="Visit LinkedIn account" class="fa fa-linkedin"></a></li>
+                        </ul>
+                        <div class="correction-link">
+                            <a href="mailto:bugs@punch.cool" title="Send a correction">Send a correction</a>
+                        </div>
+
+                        <!--div class="blur-bg">
+                                <a href="#" class="btn btn-white j-show-answer" title="Reveal answer">Reveal answer</a>
+                            </div-->
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+        <div class="pagination-holder">
+            <div class="content-wrapper">
+                <a class="btn btn-green btn-green-sm prev" href="">Previous</a>
+                <a class="btn btn-green btn-green-sm next" href="./rails_ruby_on_rails_ror.html">Next</a>
+            </div>
+        </div>
+
+        <div class="ask-form-section" id="ask-question">
+            <div class="container">
+                <div class="head-block">
+                    <h2 class="subheading">Ask a question</h2>
+                    <h3 class="title title-sm">Ask a question, and one of our engineers will answer it.</h3>
+                    <p class="description">We keep our questions nice and simple to be useful for everyone, and we may not answer or publish every question.</p>
+                </div>
+
+                <form class="start-form j-questions-form" accept-charset="UTF-8" action="https://formsubmit.io/send/221d7389-b3dd-42b5-bed6-440ea5778fb1" method="POST">
+
+
+                    <div class="form-elements">
+                        <div class="form-group">
+                            <label>Your question</label>
+                            <textarea class="form-control" name="question" rows="4" required></textarea>
+                        </div>
+                        <div class="form-half">
+                            <div class="form-group">
+                                <label>Topic</label>
+                                <select class="form-control selectpicker" name="topic">
+                                    <option value="PostgreSQL" selected>PostgreSQL</option>
+                                    <option value="Ruby on Rails">Ruby on Rails</option>
+                                    <option value="ECMAScript6">ECMAScript6</option>
+                                    <option value="ECMAScript7">ECMAScript7</option>
+                                    <option value="Node.js">Node.js</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="Ruby">Ruby</option>
+                                    <option value="Python">Python</option>
+                                    <option value="iOS">iOS</option>
+                                    <option value="Android">Android</option>
+                                    <option value="Objective-C">Objective-C</option>
+                                    <option value="Swift">Swift</option>
+                                    <option value="MongoDB">MongoDB</option>
+                                    <option value="JavaScript">JavaScript</option>
+                                    <option value=".NET">.NET</option>
+                                    <option value="Angular.js">Angular.js</option>
+                                    <option value="Angular.js 2">Angular.js 2</option>
+                                    <option value="jQuery">jQuery</option>
+                                    <option value="Backbone.js">Backbone.js</option>
+                                    <option value="React">React</option>
+                                    <option value="Redux">Redux</option>
+                                    <option value="React Native">React Native</option>
+                                    <option value="Java">Java</option>
+                                    <option value="HTML5">HTML5</option>
+                                    <option value="CSS">CSS</option>
+                                    <option value="MySQL">MySQL</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Your name</label>
+                                <input class="form-control" type="text" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Your email</label>
+                                <input class="form-control" type="email" name="email" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-green">Submit a question</button>
+
+                            <div class="bottom-text">Your number is stored privately and never shared.<br>By submitting a question, you agree to our <a href="">terms</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="success-msg">
+                        Request sent. Thank you!<br>
+                        <a href="" title="Send another one">Send another one</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <section class="base-layout breadcrumb-group"></section>
+
+        <section class="base-layout cta footer">
+            <div class="primary">
+                <div class="lockup">
+                    <div class="heading">
+                        <h2 class="title">Let&rsquo;s work together.</h2>
+                        <p class="title-secondary">Get in touch.</p>
+                    </div>
+                    <div class="description">
+                        <div class="button-group">
+                            <a href="/contact/" class="button" title="Contact a Client Advisor">
+                                <span class="title">Contact a Client Advisor</span>
+                                <span class="graphic"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="base-layout breadcrumb-group">
+            <ol>
+                <li><a href="/community/">Community</a></li>
+                <li><a href="/community/questions-answers">Interview Questions</a></li>
+                <li><span>PostgreSQL</span></li>
+            </ol>
+        </section>
+
+        <div class="footer">
+            <div class="section footer-log-row">
+                <a href="/" class="logo"><img src="/assets/images/shared/punch_000000.svg" alt="Punch" /></a>
+                <div class="tel-email-wrapper">
+                    <!-- <div class="tel-wrapper"><a href="tel:14152124834"><strong>Tell &nbsp;</strong>415-212-4834</a></div> -->
+                    <div class="tel-wrapper">
+                        <a href="mailto:start@punch.cool"><strong>Email &nbsp;</strong>start@punch.cool</a>
+                    </div>
+                </div>
+            </div>
+            <div class="site" id="footer-placeholder"></div>
+        <script>
+            $(function () {
+                $("#footer-placeholder").load("footer.html");
+            });
+        </script>
+            <div class="imprint">
+                <div class="section legal">
+                    <div class="copyright">
+                        Copyright &copy; 2014&ndash;2021 Punch, LLC. All rights reserved.
+                        <a href="/legal/terms/" class="">Terms</a> &amp;
+                        <a href="/legal/privacy/" class="">Privacy</a>
+                    </div>
+                </div>
+                <div class="section social">
+                    <a href="https://www.facebook.com/punchpicks" class="facebook">Facebook</a>
+                    <a href="https://www.instagram.com/punchpicks/" class="instagram">Instagram</a>
+                    <a href="https://twitter.com/punchpicks" class="twitter">Twitter</a>
+                    <a href="https://www.linkedin.com/company/punchgroup" class="linkedin">LinkedIn</a>
+                    <a href="https://github.com/punchagency" class="github">GitHub</a>
+                    <a href="https://dribbble.com/punch" class="dribbble">Dribbble</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/base.min.js?1647507499020"></script>
+        <!-- Load additional template file dependencies -->
+        <script src="/js/forms.min.js?1647507499020"></script>
+        <script src="/js/qa.min.js?1647507499020"></script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-72505939-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- Google Code for Remarketing Tag -->
+        <!--------------------------------------------------
+  Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+  --------------------------------------------------->
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            var google_conversion_id = 847280452;
+            var google_custom_params = window.google_tag_params;
+            var google_remarketing_only = true;
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+        </script>
+        <noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/847280452/?guid=ON&amp;script=0"/>
+  </div>
+  </noscript>
+
+
+        <!-- Drip -->
+        <script type="text/javascript">
+            var _dcq = _dcq || [];
+            var _dcs = _dcs || {};
+            _dcs.account = '5124310';
+
+            (function() {
+                if (window.location.href.indexOf("localhost") < 0) { // localhost cannot be found
+                    var dc = document.createElement('script');
+                    dc.type = 'text/javascript';
+                    dc.async = true;
+                    dc.src = '//tag.getdrip.com/5124310.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(dc, s);
+                }
+            })();
+        </script>
+        <!-- End Drip -->
+</body>
+
+</html>
